@@ -48,6 +48,8 @@ MonoBehaviour:
   - RPC_PickupSaber
   - RPC_StartCountdown
   - GiveCosmetic
+  - RPC_DisableObject
+  - RPC_EnableObject
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

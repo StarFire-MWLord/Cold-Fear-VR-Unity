@@ -35590,6 +35590,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 201781812}
+  - component: {fileID: 201781818}
+  - component: {fileID: 201781817}
+  - component: {fileID: 201781816}
+  - component: {fileID: 201781815}
+  - component: {fileID: 201781814}
+  - component: {fileID: 201781813}
   m_Layer: 0
   m_Name: ----------------
   m_TagString: Untagged
@@ -35612,6 +35618,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &201781813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201781811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b435a586e9a440d408dc50fbf7df1278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresOculusAuthManager
+  DisableOculusAuthInEditor: 0
+  DisconnectPhotonOnAuthFailure: 0
+  QuitGameOnAuthFailure: 0
+  onAuthSuccessEnableObjects: []
+  onAuthSuccessDisableObjects: []
+  onAuthFailEnableObjects: []
+  onAuthFailDisableObjects: []
+--- !u!114 &201781814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201781811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7480d3cb33969904e8f3d7d8fcbf1221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Oculus.Platform.EntitlementCheck.AppEntitlementCheck
+  oculusDisplayName: 
+  oculusUsername: 
+  oculusPlayerID: 
+--- !u!114 &201781815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201781811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8459415482422d04e8ac8dc7e14cfe88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomIDRequester
+--- !u!114 &201781816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201781811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9e927d1633ca5469b88fbb77061c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OculusAuthenticator
+  objectToDisable1: {fileID: 0}
+  objectToDisable2: {fileID: 0}
+  objectToEnable1: {fileID: 0}
+--- !u!114 &201781817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201781811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98382116f570e6248b72b1b52caa1973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayFabAuthenticator
+  playfabLogin: {fileID: 0}
+  login: {fileID: 0}
+  playfabTitleId: Your title ID
+  authenticationFailedObject: {fileID: 0}
+  disableOnFailureObject: {fileID: 0}
+  DisableOnfailure: {fileID: 0}
+  customIDRequester: {fileID: 201781815}
+--- !u!114 &201781818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201781811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ba4e58b77c4ac4684ff590e3415b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresAntiTamper
+  objectToCheck: {fileID: 0}
+  objectToDisable: {fileID: 0}
+  objectToEnable: {fileID: 0}
+  toggleState: 0
 --- !u!1 &203776108
 GameObject:
   m_ObjectHideFlags: 0
@@ -35623,6 +35725,7 @@ GameObject:
   - component: {fileID: 203776109}
   - component: {fileID: 203776112}
   - component: {fileID: 203776111}
+  - component: {fileID: 203776113}
   m_Layer: 27
   m_Name: LeftHand Controller
   m_TagString: HandTag
@@ -35699,6 +35802,20 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!114 &203776113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203776108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a961433ee45bf4f9b11b9dede25719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VibrationsNotTriggerBased
+  vibrationStrength: 1
+  VibrationHand: 0
 --- !u!1 &259454429
 GameObject:
   m_ObjectHideFlags: 0
@@ -38493,6 +38610,7 @@ GameObject:
   - component: {fileID: 570244736}
   - component: {fileID: 570244739}
   - component: {fileID: 570244738}
+  - component: {fileID: 570244740}
   m_Layer: 27
   m_Name: RightHand Controller
   m_TagString: HandTag
@@ -38569,6 +38687,20 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!114 &570244740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570244735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a961433ee45bf4f9b11b9dede25719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VibrationsNotTriggerBased
+  vibrationStrength: 1
+  VibrationHand: 1
 --- !u!1 &574058717
 GameObject:
   m_ObjectHideFlags: 0
@@ -53306,6 +53438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2843775808793626174}
   - component: {fileID: 2843775808793626175}
+  - component: {fileID: 2843775808793626176}
   m_Layer: 0
   m_Name: PhotonVRManager
   m_TagString: Untagged
@@ -53350,7 +53483,26 @@ MonoBehaviour:
   DefaultQueue: Default
   DefaultRoomLimit: 10
   ConnectOnAwake: 1
-  JoinRoomOnConnect: 1
+  JoinRoomOnConnect: 0
+--- !u!114 &2843775808793626176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2843775808793626172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 800ea217b66e4b0438c33f6b93028dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarfiresPhotonManger
+  defaultPunAppId: e778a488-640d-41e7-a391-c5f9a6d20899
+  defaultVoiceAppId: 90c48a7c-9a1a-4da3-b99c-a19d44703d40
+  maxPlayersPerRoom: 10
+  AutoConnectToPhoton: 1
+  AutoJoinRoomOnAwake: 1
+  publicServers: []
+  privateServers: []
 --- !u!114 &4249348819354988064
 MonoBehaviour:
   m_ObjectHideFlags: 0

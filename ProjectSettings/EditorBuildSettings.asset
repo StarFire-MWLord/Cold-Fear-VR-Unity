@@ -16,6 +16,14 @@ EditorBuildSettings:
       type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 2bff3f4a08bb8ea4c984e5399e15fe3c,
       type: 2}
+    com.unity.adaptivePerformance.basic.provider_settings: {fileID: 11400000, guid: 079f4f046ca9773418952a52cb94dcaa,
+      type: 2}
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
+      guid: dd48e2102f4f4e94b84f63fc7a47b533, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 611868b9f9bf7f141be1d6dd5a7adf42,
+      type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 69d16d9024c4d774682d712ee88bcc82, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a34e4f06f0ba4e2f8dc92b400299dca,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b1a9a09ccfa4e4c0ab3cf9366a1d2419,

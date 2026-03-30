@@ -11,15 +11,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - NonWalkable
   - Water
   - UI
-  - 
-  - 
+  - MainCamera
+  - Player
   - Gorilla Body Collider
   - Gorilla Object
   - Gorilla Hand
-  - 
+  - HandTag
   - 
   - Gorilla Head
   - 

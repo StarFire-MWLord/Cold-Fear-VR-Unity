@@ -5,28 +5,47 @@ using PlayFab;
 using System.Threading.Tasks;
 using PlayFab.ClientModels;
 using UnityEngine.SceneManagement;
+using System.Globalization;
+using System;
 using TMPro;
+using Photon.VR;
 
 public class Playfablogin : MonoBehaviour
 {
-    public static Playfablogin instance;
-
     [Header("COSMETICS")]
+    public static Playfablogin instance;
     public string MyPlayFabID;
     public string CatalogName;
     public List<GameObject> specialitems;
     public List<GameObject> disableitems;
+
     [Header("CURRENCY")]
     public string CurrencyName;
     public TextMeshPro currencyText;
-    public string currencyCode = "HS";
-    [SerializeField]
     public int coins;
-    [Header("BANNED")]
-    public string bannedscenename;
+
+    [Header("BAN STUFF")]
+    public GameObject[] StuffToDisable;
+    public GameObject[] StuffToEnable;
+    public MeshRenderer[] StuffToMaterialChange;
+    public Material MaterialToChangeToo;
+    public TextMeshPro[] BanTimes;
+    public TextMeshPro[] BanReasons;
+
     [Header("TITLE DATA")]
     public TextMeshPro MOTDText;
-    
+
+    [Header("PLAYER DATA")]
+    public TextMeshPro UserName;
+    public string StartingUsername;
+    public string Name;
+    [SerializeField]
+    public bool UpdateName;
+
+    [Header("DON'T DESTROY ON LOAD")]
+    public GameObject[] DDOLObjects;
+
+    public List<ItemInstance> userInventory = new List<ItemInstance>();
 
     public void Awake()
     {
@@ -36,12 +55,10 @@ public class Playfablogin : MonoBehaviour
     void Start()
     {
         login();
-        
     }
 
     public void login()
     {
-
         var request = new LoginWithCustomIDRequest
         {
             CustomId = SystemInfo.deviceUniqueIdentifier,
@@ -57,8 +74,11 @@ public class Playfablogin : MonoBehaviour
     public void OnLoginSuccess(LoginResult result)
     {
         Debug.Log("logging in");
+
         GetAccountInfoRequest InfoRequest = new GetAccountInfoRequest();
         PlayFabClientAPI.GetAccountInfo(InfoRequest, AccountInfoSuccess, OnError);
+
+        StartCoroutine(DDOLStuff());
         GetVirtualCurrencies();
         GetMOTD();
     }
@@ -70,6 +90,8 @@ public class Playfablogin : MonoBehaviour
         PlayFabClientAPI.GetUserInventory(new GetUserInventoryRequest(),
         (result) =>
         {
+            userInventory = result.Inventory;
+
             foreach (var item in result.Inventory)
             {
                 if (item.CatalogVersion == CatalogName)
@@ -97,6 +119,10 @@ public class Playfablogin : MonoBehaviour
         });
     }
 
+    async void Update()
+    {
+    }
+
     public void GetVirtualCurrencies()
     {
         PlayFabClientAPI.GetUserInventory(new GetUserInventoryRequest(), OnGetUserInventorySuccess, OnError);
@@ -104,17 +130,61 @@ public class Playfablogin : MonoBehaviour
 
     void OnGetUserInventorySuccess(GetUserInventoryResult result)
     {
-        coins = result.VirtualCurrency[currencyCode];
-        currencyText.text = "You have " + coins.ToString() + " " + CurrencyName;
+        coins = result.VirtualCurrency["SH"];
+        currencyText.text = "You Have : " + coins.ToString() + " " + CurrencyName;
     }
 
     private void OnError(PlayFabError error)
     {
         if (error.Error == PlayFabErrorCode.AccountBanned)
         {
-            SceneManager.LoadScene(bannedscenename);
-        }
+            PhotonVRManager.Manager.Disconnect();
 
+            foreach (GameObject obj in StuffToDisable)
+                obj.SetActive(false);
+
+            foreach (GameObject obj in StuffToEnable)
+                obj.SetActive(true);
+
+            foreach (MeshRenderer rend in StuffToMaterialChange)
+                rend.material = MaterialToChangeToo;
+
+            foreach (var item in error.ErrorDetails)
+            {
+                foreach (TextMeshPro BanTime in BanTimes)
+                {
+                    if (item.Value[0] == "Indefinite")
+                    {
+                        BanTime.text = "Permanent Ban";
+                    }
+                    else
+                    {
+                        string playFabTime = item.Value[0];
+                        DateTime unityTime;
+                        try
+                        {
+                            unityTime = DateTime.ParseExact(playFabTime, "yyyy-MM-dd'T'HH:mm:ss", CultureInfo.InvariantCulture);
+                            TimeSpan timeLeft = unityTime.Subtract(DateTime.UtcNow);
+                            int hoursLeft = (int)timeLeft.TotalHours;
+                            BanTime.text = string.Format("Hours Left: {0}", hoursLeft);
+                        }
+                        catch (FormatException ex)
+                        {
+                            Debug.LogErrorFormat("Failed to parse PlayFab time '{0}': {1}", playFabTime, ex.Message);
+                        }
+                    }
+                }
+
+                foreach (TextMeshPro BanReason in BanReasons)
+                {
+                    BanReason.text = string.Format("Reason: {0}", item.Key);
+                }
+            }
+        }
+        else
+        {
+            login();
+        }
     }
 
     public void GetMOTD()
@@ -130,8 +200,15 @@ public class Playfablogin : MonoBehaviour
             return;
         }
         MOTDText.text = result.Data["MOTD"];
-        
     }
 
-
+    IEnumerator DDOLStuff()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        yield return new WaitForSeconds(0.1f);
+        foreach (GameObject Obj in DDOLObjects)
+        {
+            DontDestroyOnLoad(Obj);
+        }
+    }
 }

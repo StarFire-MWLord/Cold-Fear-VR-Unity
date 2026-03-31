@@ -74,8 +74,8 @@ GameObject:
   - component: {fileID: 3507063527992978479}
   - component: {fileID: 6857980270654132801}
   - component: {fileID: 8682959235131065536}
-  - component: {fileID: 5501357657414094938}
   - component: {fileID: 1471488666515960005}
+  - component: {fileID: 7738422829076185957}
   m_Layer: 0
   m_Name: Cylinder.002 (1)
   m_TagString: Untagged
@@ -155,28 +155,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5501357657414094938
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34400487318627576}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8691780276856062721, guid: e5ce9f033449cff4f9bd2058c48817be, type: 3}
 --- !u!114 &1471488666515960005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +171,27 @@ MonoBehaviour:
   amountforce: 1000
   ptView: {fileID: 7780029385335637883}
   FlingCollider: {fileID: 34400487318627576}
+--- !u!65 &7738422829076185957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34400487318627576}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.9873214, y: 6.6562195, z: 4.1245365}
+  m_Center: {x: -0.31894964, y: 0.062096544, z: -1.0622656}
 --- !u!1 &68682153629911118
 GameObject:
   m_ObjectHideFlags: 0
@@ -85092,7 +85091,7 @@ GameObject:
   - component: {fileID: 4157428393819162411}
   - component: {fileID: 6285400745507174221}
   m_Layer: 0
-  m_Name: Developer Tag
+  m_Name: DeveloperTag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

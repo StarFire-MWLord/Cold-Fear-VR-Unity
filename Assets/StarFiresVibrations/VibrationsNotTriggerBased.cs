@@ -13,11 +13,9 @@ public class VibrationsNotTriggerBased : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Start method is being called.");
-
-        if (VibrationHand == EasyHand.RightHand)
+        if (VibrationHand != EasyHand.LeftHand && VibrationHand != EasyHand.RightHand)
         {
-            Debug.Log("VibrationHand was not assigned, setting to LeftHand.");
+            Debug.Log("VibrationHand not set, defaulting to LeftHand.");
             VibrationHand = EasyHand.LeftHand;
         }
         else
@@ -44,12 +42,12 @@ public class VibrationsNotTriggerBased : MonoBehaviour
         if (VibrationHand == EasyHand.LeftHand)
         {
             Debug.Log("Triggering vibration for LeftHand.");
-            StartCoroutine(EasyInputs.Vibration(EasyHand.LeftHand, vibrationStrength, 0.15f));
+            StartCoroutine(EasyInputs.Vibration(EasyHand.LeftHand, vibrationStrength, 0.5f));
         }
         else if (VibrationHand == EasyHand.RightHand)
         {
             Debug.Log("Triggering vibration for RightHand.");
-            StartCoroutine(EasyInputs.Vibration(EasyHand.RightHand, vibrationStrength, 0.15f));
+            StartCoroutine(EasyInputs.Vibration(EasyHand.RightHand, vibrationStrength, 0.5f));
         }
         else
         {

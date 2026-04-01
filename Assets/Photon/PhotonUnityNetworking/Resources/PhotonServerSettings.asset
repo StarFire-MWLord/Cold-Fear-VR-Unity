@@ -50,6 +50,8 @@ MonoBehaviour:
   - GiveCosmetic
   - RPC_DisableObject
   - RPC_EnableObject
+  - DisableObject
+  - EnableObject
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

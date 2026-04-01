@@ -282,7 +282,7 @@ MonoBehaviour:
       m_VisualImpact: 2
       m_Target: 2
       m_MaxLevel: 40
-      m_MinBound: 50
+      m_MinBound: 150
       m_MaxBound: 1000
     m_AdaptivePhysics:
       m_Name: Adaptive Physics

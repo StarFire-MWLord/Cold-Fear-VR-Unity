@@ -8,50 +8,43 @@ public class VibrationsNotTriggerBased : MonoBehaviour
     [Header("This Script Was Made By StarFireVR")]
     [Space]
     [Header("Vibration Settings")]
-    [SerializeField] private float vibrationStrength = 1.0f;
-    [SerializeField] public EasyHand VibrationHand = EasyHand.LeftHand;
+    [SerializeField] private float vibrationStrength = 0.2f;
 
-    private void Start()
-    {
-        if (VibrationHand != EasyHand.LeftHand && VibrationHand != EasyHand.RightHand)
-        {
-            Debug.Log("VibrationHand not set, defaulting to LeftHand.");
-            VibrationHand = EasyHand.LeftHand;
-        }
-        else
-        {
-            Debug.Log("VibrationHand is set to: " + VibrationHand);
-        }
-    }
+    [Header("Hand Layers")]
+    [SerializeField] private LayerMask LeftHandLayer;
+    [SerializeField] private LayerMask RightHandLayer;
+
+    [Header("Vibration Settings")]
+    [SerializeField] private float collisionVelocityThreshold = 0.1f; // Minimum velocity to trigger vibration
+    [SerializeField] private float vibrationCooldown = 0.2f; // Cooldown per hand
+
+    private float lastLeftVibrationTime = 0f;
+    private float lastRightVibrationTime = 0f;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("HandTag"))
-        {
-            Debug.Log("Trigger Entered with HandTag.");
-            TriggerVibration();
-        }
-        else
-        {
-            Debug.Log("Trigger entered, but not with HandTag.");
-        }
-    }
+        int layer = collision.collider.gameObject.layer;
+        float velocity = collision.relativeVelocity.magnitude;
 
-    private void TriggerVibration()
-    {
-        if (VibrationHand == EasyHand.LeftHand)
+        // LEFT HAND
+        if (((1 << layer) & LeftHandLayer) != 0 && velocity > collisionVelocityThreshold)
         {
-            Debug.Log("Triggering vibration for LeftHand.");
-            StartCoroutine(EasyInputs.Vibration(EasyHand.LeftHand, vibrationStrength, 0.5f));
+            if (Time.time - lastLeftVibrationTime > vibrationCooldown)
+            {
+                lastLeftVibrationTime = Time.time;
+                Debug.Log("Left hand hit ground.");
+                StartCoroutine(EasyInputs.Vibration(EasyHand.LeftHand, vibrationStrength, 0.2f)); // fixed 0.2s
+            }
         }
-        else if (VibrationHand == EasyHand.RightHand)
+        // RIGHT HAND
+        else if (((1 << layer) & RightHandLayer) != 0 && velocity > collisionVelocityThreshold)
         {
-            Debug.Log("Triggering vibration for RightHand.");
-            StartCoroutine(EasyInputs.Vibration(EasyHand.RightHand, vibrationStrength, 0.5f));
-        }
-        else
-        {
-            Debug.LogWarning("VibrationHand is not assigned properly.");
+            if (Time.time - lastRightVibrationTime > vibrationCooldown)
+            {
+                lastRightVibrationTime = Time.time;
+                Debug.Log("Right hand hit ground.");
+                StartCoroutine(EasyInputs.Vibration(EasyHand.RightHand, vibrationStrength, 0.2f)); // fixed 0.2s
+            }
         }
     }
 }

@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::fling
   amountup: 0
-  amountforce: 1000
+  amountforce: 1500
   ptView: {fileID: 7780029385335637883}
   FlingCollider: {fileID: 34400487318627576}
 --- !u!65 &7738422829076185957
@@ -75281,7 +75281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::fling
   amountup: 0
-  amountforce: 1000
+  amountforce: 1500
   ptView: {fileID: 7780029385335637883}
   FlingCollider: {fileID: 3835462615347640337}
 --- !u!65 &3767205510008063064
@@ -75303,8 +75303,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.9162872, y: 3.8628314, z: 1.9891528}
-  m_Center: {x: 0.011051193, y: 0.11995325, z: 0.0054234792}
+  m_Size: {x: 6.862404, y: 5.4095955, z: 1.9891528}
+  m_Center: {x: -0.02657444, y: 0.14151229, z: 0.00542348}
 --- !u!114 &4521327446505654431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87963,7 +87963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::fling
   amountup: 0
-  amountforce: 1000
+  amountforce: 1500
   ptView: {fileID: 7780029385335637883}
   FlingCollider: {fileID: 5435459620774660474}
 --- !u!65 &5745701175827564396
@@ -87985,8 +87985,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.4102507, y: 4.1420236, z: 2.046643}
-  m_Center: {x: 0.15097618, y: -0.070365615, z: -0.023322148}
+  m_Size: {x: 6.834743, y: 5.588368, z: 2.046643}
+  m_Center: {x: 0.08762591, y: 0.16987638, z: -0.023322146}
 --- !u!114 &7711872612310510685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93996,7 +93996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::fling
   amountup: 0
-  amountforce: 1000
+  amountforce: 1500
   ptView: {fileID: 7780029385335637883}
   FlingCollider: {fileID: 6176900877354556967}
 --- !u!65 &1961834007554197988
@@ -94018,8 +94018,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.72711, y: 5.513605, z: 2.0766876}
-  m_Center: {x: -0.012369858, y: -0.09959536, z: -0.038344387}
+  m_Size: {x: 7.4444923, y: 6.3868456, z: 2.0766876}
+  m_Center: {x: 0.14398685, y: -0.09945545, z: -0.038344387}
 --- !u!114 &5834879644784568303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124559,7 +124559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::fling
   amountup: 0
-  amountforce: 1000
+  amountforce: 1500
   ptView: {fileID: 7780029385335637883}
   FlingCollider: {fileID: 7206781222861808999}
 --- !u!65 &5631406985329620312
@@ -124581,8 +124581,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.1465945, y: 5.490066, z: 2.028683}
-  m_Center: {x: 0.06003887, y: -0.0065857354, z: -0.014341558}
+  m_Size: {x: 6.6820436, y: 6.813558, z: 2.028683}
+  m_Center: {x: 0.051238224, y: 0.21161899, z: -0.014341557}
 --- !u!114 &994559004640657861
 MonoBehaviour:
   m_ObjectHideFlags: 0

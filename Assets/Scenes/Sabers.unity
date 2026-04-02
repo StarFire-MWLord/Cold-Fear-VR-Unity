@@ -920,7 +920,6 @@ GameObject:
   - component: {fileID: 83171468}
   - component: {fileID: 83171471}
   - component: {fileID: 83171470}
-  - component: {fileID: 83171469}
   m_Layer: 0
   m_Name: Text (TMP) (3)
   m_TagString: Untagged
@@ -947,19 +946,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.05, y: -0.596}
   m_SizeDelta: {x: 30.2552, y: 4.2671}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &83171469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83171467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3918b1e0db4eda4b9e84276f5471521, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RainbowText
-  colorChangeSpeed: 0.3
 --- !u!114 &83171470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -996,7 +982,7 @@ MonoBehaviour:
     Co-Owners
 
     Abel
-    , colt, MW-Lord
+    , MW-Lord
 
 
     Developers
@@ -37034,8 +37020,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.05
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.024406064
+  m_Center: {x: 0.02559394, y: 0, z: 0}
 --- !u!114 &203776112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42589,8 +42575,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.05
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.024406064
+  m_Center: {x: 0.02559394, y: 0, z: 0}
 --- !u!114 &570244739
 MonoBehaviour:
   m_ObjectHideFlags: 0

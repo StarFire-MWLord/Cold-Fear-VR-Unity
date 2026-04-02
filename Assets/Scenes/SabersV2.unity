@@ -36666,6 +36666,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 636998487}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &184963998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184964000}
+  - component: {fileID: 184963999}
+  m_Layer: 0
+  m_Name: VoiceLogger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &184963999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184963998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86f533fd9917dd4da8601e9eb542c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PhotonVoice::Photon.Voice.Unity.VoiceLogger
+  LogLevel: 2
+--- !u!4 &184964000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184963998}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &199424598
 GameObject:
   m_ObjectHideFlags: 0
@@ -37717,7 +37762,7 @@ GameObject:
   - component: {fileID: 276766499}
   - component: {fileID: 276766498}
   - component: {fileID: 276766497}
-  m_Layer: 27
+  m_Layer: 7
   m_Name: GorillaPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -37795,7 +37840,7 @@ Transform:
   m_GameObject: {fileID: 276766496}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: 4.41, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38791,9 +38836,8 @@ GameObject:
   - component: {fileID: 289274171}
   - component: {fileID: 289274170}
   - component: {fileID: 289274173}
-  - component: {fileID: 289274175}
   - component: {fileID: 289274174}
-  m_Layer: 3
+  m_Layer: 18
   m_Name: ' ReturnToSpawnSceneSwitcher'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38903,33 +38947,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 289274167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f168279fefd990146849bfa52029f0c3, type: 3}
+  m_Script: {fileID: 11500000, guid: f6884eb64eebeb44b8855f3aa5279386, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KeosAmazingSceneChanger
-  scenes:
-  - LOADING
-  - HomeScene
-  - SabersV2
-  SceneToLoad: HomeScene
+  m_EditorClassIdentifier: Assembly-CSharp::SceneManagement
+  SceneToGo: HomeScene
   HandTag: HandTag
---- !u!114 &289274175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289274167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f168279fefd990146849bfa52029f0c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KeosAmazingSceneChanger
-  scenes:
-  - LOADING
-  - HomeScene
-  - SabersV2
-  SceneToLoad: HomeScene
-  HandTag: MainCamera
+  CooldownToScene: 1
 --- !u!1 &290642876
 GameObject:
   m_ObjectHideFlags: 0
@@ -81691,7 +81714,7 @@ GameObject:
   - component: {fileID: 2062312426}
   - component: {fileID: 2062312425}
   - component: {fileID: 2062312424}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftHandGorilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81783,7 +81806,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062312422}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4711208715938537054, guid: 860765b256286424c94acd15a6bc37b6, type: 3}
 --- !u!1 &2069742184
 GameObject:
   m_ObjectHideFlags: 0
@@ -82232,7 +82255,7 @@ GameObject:
   - component: {fileID: 2101564852}
   - component: {fileID: 2101564851}
   - component: {fileID: 2101564850}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightHandGorilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82324,7 +82347,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101564848}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4711208715938537054, guid: 860765b256286424c94acd15a6bc37b6, type: 3}
 --- !u!1 &2112141503
 GameObject:
   m_ObjectHideFlags: 0
@@ -83268,12 +83291,12 @@ MonoBehaviour:
   Region: us
   Head: {fileID: 954726912}
   LeftHand: {fileID: 2062312423}
-  RightHand: {fileID: 2101564849}
+  RightHand: {fileID: 570244736}
   Colour: {r: 1, g: 1, b: 1, a: 0}
   DefaultQueue: Default
   DefaultRoomLimit: 10
   ConnectOnAwake: 1
-  JoinRoomOnConnect: 0
+  JoinRoomOnConnect: 1
 --- !u!114 &2843775808793626176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83281,7 +83304,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2843775808793626172}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 800ea217b66e4b0438c33f6b93028dff, type: 3}
   m_Name: 
@@ -83511,3 +83534,4 @@ SceneRoots:
   - {fileID: 1810503087}
   - {fileID: 1623878914}
   - {fileID: 609606686}
+  - {fileID: 184964000}

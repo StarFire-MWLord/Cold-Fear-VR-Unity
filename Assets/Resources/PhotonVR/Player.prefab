@@ -81400,7 +81400,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 752089353315546107}
-  - component: {fileID: 273365084928496585}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -81425,23 +81424,6 @@ Transform:
   - {fileID: 2601653038363609581}
   m_Father: {fileID: 7404702250886733165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &273365084928496585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4755291783030743587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56de05559f7f2fa4595dfc70ce71320b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EasyInputHandCalibrator
-  hand: {fileID: 752089353315546107}
-  easyHand: 0
-  allowRotationX: 1
-  allowRotationY: 1
-  allowRotationZ: 1
 --- !u!1 &4773878221683207086
 GameObject:
   m_ObjectHideFlags: 0
@@ -140724,7 +140706,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2837222685369851332}
-  - component: {fileID: 4673177235664147336}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -140749,23 +140730,6 @@ Transform:
   - {fileID: 4462989730599002079}
   m_Father: {fileID: 7404702250886733165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4673177235664147336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8277385415320039054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56de05559f7f2fa4595dfc70ce71320b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EasyInputHandCalibrator
-  hand: {fileID: 2837222685369851332}
-  easyHand: 1
-  allowRotationX: 1
-  allowRotationY: 1
-  allowRotationZ: 1
 --- !u!1 &8321570792123722342
 GameObject:
   m_ObjectHideFlags: 0

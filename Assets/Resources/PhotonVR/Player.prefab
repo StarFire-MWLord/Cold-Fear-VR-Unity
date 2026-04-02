@@ -16079,7 +16079,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2894786369533329669}
-  - {fileID: 2837222685369851332}
   m_Father: {fileID: 367388534499960812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678118962980663309
@@ -59642,7 +59641,10 @@ Transform:
   m_Children:
   - {fileID: 5890400179122256992}
   - {fileID: 8815493292797174758}
+  - {fileID: 5062317285965503532}
   - {fileID: 182381451631106285}
+  - {fileID: 752089353315546107}
+  - {fileID: 2837222685369851332}
   m_Father: {fileID: 5550819733793230863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7034750584448290677
@@ -81398,6 +81400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 752089353315546107}
+  - component: {fileID: 273365084928496585}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -81413,15 +81416,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4755291783030743587}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.14765698, y: 0.66451865, z: 0.7211909, w: -0.1284373}
-  m_LocalPosition: {x: -0.8737802, y: -0.32462642, z: 0.11565325}
-  m_LocalScale: {x: 1.1260753, y: 1.1260749, z: 1.1260747}
+  m_LocalRotation: {x: -0, y: 0.0000000123144375, z: -0.000000023485688, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7910137498194017359}
   - {fileID: 2601653038363609581}
-  m_Father: {fileID: 3900628018547321145}
+  m_Father: {fileID: 7404702250886733165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &273365084928496585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755291783030743587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56de05559f7f2fa4595dfc70ce71320b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EasyInputHandCalibrator
+  hand: {fileID: 752089353315546107}
+  easyHand: 0
+  allowRotationX: 1
+  allowRotationY: 1
+  allowRotationZ: 1
 --- !u!1 &4773878221683207086
 GameObject:
   m_ObjectHideFlags: 0
@@ -88015,7 +88035,6 @@ Transform:
   - {fileID: 7856950602218521635}
   - {fileID: 6102617675863036}
   - {fileID: 6994113987137113306}
-  - {fileID: 752089353315546107}
   m_Father: {fileID: 8672608389061971411}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 60}
 --- !u!114 &3421992685850069950
@@ -113550,13 +113569,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6365311932244757548}
   serializedVersion: 2
-  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 0.002252151, y: -0.13625513, z: -0.060808077}
-  m_LocalScale: {x: 1.1260755, y: 1.1260755, z: 1.1260755}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.34999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7856659514856215809}
-  m_Father: {fileID: 5890400179122256992}
+  m_Father: {fileID: 7404702250886733165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8382900709877271419
 MonoBehaviour:
@@ -118552,7 +118571,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 38331861477394824}
-  - {fileID: 5062317285965503532}
   - {fileID: 5696013114381258323}
   - {fileID: 7607692105481838984}
   - {fileID: 5893482675716108203}
@@ -140706,6 +140724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2837222685369851332}
+  - component: {fileID: 4673177235664147336}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -140721,15 +140740,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8277385415320039054}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07086415, y: -0.021097267, z: -0.7215918, w: -0.6883593}
-  m_LocalPosition: {x: -0.11594991, y: -0.5208899, z: 0.15517177}
-  m_LocalScale: {x: 1.1260755, y: 1.1260753, z: 1.1260749}
+  m_LocalRotation: {x: -0, y: -0.000000010839215, z: -0.0000000068536163, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5897067227479209265}
   - {fileID: 4462989730599002079}
-  m_Father: {fileID: 5906010144548156662}
+  m_Father: {fileID: 7404702250886733165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4673177235664147336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8277385415320039054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56de05559f7f2fa4595dfc70ce71320b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EasyInputHandCalibrator
+  hand: {fileID: 2837222685369851332}
+  easyHand: 1
+  allowRotationX: 1
+  allowRotationY: 1
+  allowRotationZ: 1
 --- !u!1 &8321570792123722342
 GameObject:
   m_ObjectHideFlags: 0

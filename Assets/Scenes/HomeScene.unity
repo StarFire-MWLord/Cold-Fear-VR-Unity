@@ -49709,9 +49709,9 @@ MonoBehaviour:
   - {fileID: 1068585402}
   - {fileID: 1775600601}
   - {fileID: 2010383180}
-  - {fileID: 1102498082}
   disableitems:
   - {fileID: 1362324022}
+  - {fileID: 1102498082}
   CurrencyName: 
   currencyText: {fileID: 0}
   coins: 0
@@ -61815,9 +61815,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2062312423}
-  - component: {fileID: 2062312426}
-  - component: {fileID: 2062312425}
-  - component: {fileID: 2062312424}
   m_Layer: 0
   m_Name: LeftHandGorilla
   m_TagString: Untagged
@@ -61840,77 +61837,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2025920922}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2062312424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062312422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a1968c271479d49b996af77e9e4cf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AntiHandPhase
-  sphereTransform: {fileID: 2062312423}
-  controllerTransform: {fileID: 203776109}
---- !u!23 &2062312425
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062312422}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b3777fd894797b9498dcc25a65775d33, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2062312426
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062312422}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2069742184
 GameObject:
   m_ObjectHideFlags: 0
@@ -61984,9 +61910,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101564849}
-  - component: {fileID: 2101564852}
-  - component: {fileID: 2101564851}
-  - component: {fileID: 2101564850}
   m_Layer: 0
   m_Name: RightHandGorilla
   m_TagString: Untagged
@@ -62009,77 +61932,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2025920922}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2101564850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101564848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a1968c271479d49b996af77e9e4cf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AntiHandPhase
-  sphereTransform: {fileID: 2101564849}
-  controllerTransform: {fileID: 570244736}
---- !u!23 &2101564851
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101564848}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b3777fd894797b9498dcc25a65775d33, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2101564852
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101564848}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2112509589
 GameObject:
   m_ObjectHideFlags: 0
@@ -62510,7 +62362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2139370179
 Transform:
   m_ObjectHideFlags: 0
@@ -62753,8 +62605,8 @@ MonoBehaviour:
   VoiceAppId: 90c48a7c-9a1a-4da3-b99c-a19d44703d40
   Region: us
   Head: {fileID: 954726912}
-  LeftHand: {fileID: 2062312423}
-  RightHand: {fileID: 2101564849}
+  LeftHand: {fileID: 203776109}
+  RightHand: {fileID: 570244736}
   Colour: {r: 1, g: 1, b: 1, a: 0}
   DefaultQueue: Default
   DefaultRoomLimit: 10

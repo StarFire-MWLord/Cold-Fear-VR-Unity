@@ -1,21 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AntiHandPhase : MonoBehaviour
 {
-    [Header("Script Created by StarFireVR")]
-    [SerializeField] private Transform sphereTransform;
-    [SerializeField] private Transform controllerTransform;
+    [Header("Script made by Danix, please give credits if used!!")]
+    public Transform sphere;
+    public Transform controller;
 
-    private void FixedUpdate()
+    void Update()
     {
-        SyncRotations();
-    }
-
-    private void SyncRotations()
-    {
-        if (sphereTransform != null && controllerTransform != null)
+        if (true)
         {
-            sphereTransform.rotation = controllerTransform.rotation;
+            sphere.rotation = controller.rotation;
         }
     }
 }

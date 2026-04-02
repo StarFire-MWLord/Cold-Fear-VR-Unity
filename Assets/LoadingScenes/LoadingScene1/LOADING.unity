@@ -15578,7 +15578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63414368d1f3a6c41b5645597d609b7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeSystem
-  sceneToLoad: Sabers
+  sceneToLoad: HomeScene
   waitBeforeFade: 5
   fadeDuration: 2
   fadeTexture: {fileID: 2800000, guid: a025c23fceb7d4966b603419f551ce99, type: 3}

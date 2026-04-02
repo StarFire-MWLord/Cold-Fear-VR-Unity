@@ -1,10 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor.Rendering;
 using UnityEngine.UIElements;
-
-
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -39,6 +36,7 @@ public class KeosAmazingSceneChanger : MonoBehaviour
         }
     }
 }
+
 #if UNITY_EDITOR
 [CustomEditor(typeof(KeosAmazingSceneChanger))]
 public class KeosAmazingSceneChangerEditor : Editor

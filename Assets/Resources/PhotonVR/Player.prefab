@@ -59818,8 +59818,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 38331861477394824}
-  - {fileID: 7815435375531854782}
   - {fileID: 5890400179122256992}
   - {fileID: 8815493292797174758}
   - {fileID: 5062317285965503532}
@@ -70009,13 +70007,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3356683762515450878}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13422734, y: 4.3962585e-15, z: -1.8841104e-15, w: 0.9909506}
-  m_LocalPosition: {x: -0.01176844, y: 0.16698185, z: 0.00042741}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.9909506, y: -1.8841104e-15, z: -4.3962585e-15, w: 0.13422734}
+  m_LocalPosition: {x: -0.011000001, y: -0.71841574, z: -0.061289374}
+  m_LocalScale: {x: 1.1260755, y: 1.1260751, z: 1.1260751}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6656069275511001013}
-  m_Father: {fileID: 7404702250886733165}
+  m_Father: {fileID: 5890400179122256992}
   m_LocalEulerAnglesHint: {x: 10.075, y: 0, z: 0}
 --- !u!114 &7043585978707817843
 MonoBehaviour:
@@ -81638,6 +81636,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 752089353315546107}
+  - component: {fileID: 602241247911354521}
+  - component: {fileID: 6019784283170194235}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -81653,7 +81653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4755291783030743587}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.0000000123144375, z: -0.000000023485688, w: 1}
+  m_LocalRotation: {x: -0.066910654, y: 0.6996393, z: 0.7055987, w: -0.0903227}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -81661,7 +81661,46 @@ Transform:
   - {fileID: 7910137498194017359}
   - {fileID: 2601653038363609581}
   m_Father: {fileID: 7404702250886733165}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 77.224, y: 86.875, z: 91.216}
+--- !u!114 &602241247911354521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755291783030743587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PhotonUnityNetworking::Photon.Pun.PhotonTransformView
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &6019784283170194235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755291783030743587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PhotonUnityNetworking::Photon.Pun.PhotonView
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 602241247911354521}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &4773878221683207086
 GameObject:
   m_ObjectHideFlags: 0
@@ -88246,16 +88285,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5475858171914505207}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.15304585, y: 0.6903456, z: -0.15304585, w: 0.6903456}
-  m_LocalPosition: {x: 0.00015076625, y: 0.39370066, z: -0.000009357931}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
+  m_LocalRotation: {x: -0.066910654, y: 0.6996393, z: 0.7055987, w: -0.0903227}
+  m_LocalPosition: {x: 0, y: 0.39370066, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7856950602218521635}
   - {fileID: 6102617675863036}
   - {fileID: 6994113987137113306}
   m_Father: {fileID: 8672608389061971411}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: -25}
+  m_LocalEulerAnglesHint: {x: 102.776, y: 93.125, z: 88.784}
 --- !u!114 &5558831102699322203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118881,6 +118920,8 @@ Transform:
   m_LocalScale: {x: 0.88804, y: 0.88804, z: 0.88804}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 38331861477394824}
+  - {fileID: 7815435375531854782}
   - {fileID: 5696013114381258323}
   - {fileID: 7607692105481838984}
   - {fileID: 5893482675716108203}
@@ -141096,6 +141137,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2837222685369851332}
+  - component: {fileID: 1900650467560472762}
+  - component: {fileID: 4511915962993891418}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -141111,7 +141154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8277385415320039054}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.000000010839215, z: -0.0000000068536163, w: 1}
+  m_LocalRotation: {x: -0.066910654, y: 0.6996393, z: 0.7055987, w: -0.0903227}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -141120,6 +141163,45 @@ Transform:
   - {fileID: 4462989730599002079}
   m_Father: {fileID: 7404702250886733165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900650467560472762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8277385415320039054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PhotonUnityNetworking::Photon.Pun.PhotonTransformView
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &4511915962993891418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8277385415320039054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PhotonUnityNetworking::Photon.Pun.PhotonView
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1900650467560472762}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &8321570792123722342
 GameObject:
   m_ObjectHideFlags: 0
@@ -141144,12 +141226,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8321570792123722342}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: 0.002252151, y: -0.53038156, z: -0.060808077}
+  m_LocalScale: {x: 1.1260755, y: 1.1260755, z: 1.1260755}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7404702250886733165}
+  m_Father: {fileID: 5890400179122256992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8333967430189308571
 GameObject:
@@ -156825,16 +156907,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8897933396927965828}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.15304591, y: -0.6903456, z: 0.15304591, w: 0.6903456}
-  m_LocalPosition: {x: -0.00007904323, y: 0.3935835, z: -0.00002534688}
-  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
+  m_LocalRotation: {x: -0.066910654, y: 0.6996393, z: 0.7055987, w: -0.0903227}
+  m_LocalPosition: {x: 0, y: 0.39370066, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 531447585453217122}
   - {fileID: 6748759693669945840}
   - {fileID: 1338600048338386284}
   m_Father: {fileID: 5906010144548156662}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 25}
+  m_LocalEulerAnglesHint: {x: 0.056, y: 189.802, z: -82.46}
 --- !u!114 &2500878932724871171
 MonoBehaviour:
   m_ObjectHideFlags: 0

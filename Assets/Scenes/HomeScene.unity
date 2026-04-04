@@ -444,7 +444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &82390857
 Transform:
   m_ObjectHideFlags: 0
@@ -497,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90.393}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.05, y: -0.596}
+  m_AnchoredPosition: {x: -0.05, y: -0.406}
   m_SizeDelta: {x: 30.2552, y: 4.2671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83171470
@@ -520,63 +520,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Staff-List
-
-
-    Creator
-
-    samthebee
-
-
-    Co-Creator
-
-    MW-Lord
-
-
-    Co-Owners
-
-    Abel
-    , MW-Lord
-
-
-    Developers
-
-    smeliot , MW-Lord , colt
-
-
-    Community-Managers
-
-    Traffic
-    cone man , smeliot
-
-
-    Senior-Admins
-
-    More-Soon
-
-
-    Admins
-
-    Duck
-    , pineapplevr
-
-
-    Senior-Moderators
-
-    purebloodz.
-
-
-    Moderators
-
-    Chito
-    puff edit ac , Moosees
-
-    , cardboard1man
-
-
-    Junior-Moderators
-
-    More-Soon'
+  m_text: "Staff-List\n\nCreator\nsamthebee\n\nCo-Creator\nMW-Lord\n\nCo-Owners\nMW-Lord\n\nDevelopers\nsmeliot
+    , MW-Lord \n\nCommunity-Managers\nTraffic cone man , smeliot, pineapplevr\n\nSenior-Admins\nDuck
+    ,\n\nAdmins\npurebloodz.\n\nSenior-Moderators\ncardboard1man\n\nModerators\n
+    cardboard1man ,colt\n\nJunior-Moderators\nMoosees , Chito puff edit ac"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea0e9dc95a31c534cbfa77fbd48dec10, type: 2}
   m_sharedMaterial: {fileID: 6503820799301004658, guid: ea0e9dc95a31c534cbfa77fbd48dec10,
@@ -775,8 +722,8 @@ GameObject:
   - component: {fileID: 102582820}
   - component: {fileID: 102582819}
   - component: {fileID: 102582818}
-  - component: {fileID: 102582816}
   - component: {fileID: 102582821}
+  - component: {fileID: 102582822}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -799,21 +746,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1888294221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &102582816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102582814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 5
-  cosmeticName: FlingHammer
-  handTag: HandTag
 --- !u!65 &102582818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -913,6 +845,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &102582822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102582814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: FlingHammer
+  playfabItemId: FlingHammer
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &106945107
 GameObject:
   m_ObjectHideFlags: 0
@@ -35692,6 +35648,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &196297211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 196297212}
+  m_Layer: 0
+  m_Name: TestGameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &196297212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196297211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.2253, y: 48.48, z: -1.90132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &201781811
 GameObject:
   m_ObjectHideFlags: 0
@@ -35924,8 +35911,8 @@ GameObject:
   - component: {fileID: 206772602}
   - component: {fileID: 206772601}
   - component: {fileID: 206772600}
-  - component: {fileID: 206772599}
   - component: {fileID: 206772603}
+  - component: {fileID: 206772604}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -35948,21 +35935,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388517456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &206772599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206772597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Senior-StaffTag
-  handTag: HandTag
 --- !u!65 &206772600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36062,6 +36034,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &206772604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206772597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Senior-StaffTag
+  playfabItemId: Senior-StaffTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &229599544
 GameObject:
   m_ObjectHideFlags: 0
@@ -37096,8 +37092,8 @@ GameObject:
   - component: {fileID: 284966692}
   - component: {fileID: 284966691}
   - component: {fileID: 284966690}
-  - component: {fileID: 284966689}
   - component: {fileID: 284966693}
+  - component: {fileID: 284966694}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -37120,21 +37116,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 636850236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &284966689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284966687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Co-OwnerTag
-  handTag: HandTag
 --- !u!65 &284966690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37234,6 +37215,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &284966694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284966687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Co-OwnerTag
+  playfabItemId: Co-OwnerTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &285534507
 GameObject:
   m_ObjectHideFlags: 0
@@ -38515,6 +38520,7 @@ GameObject:
   - component: {fileID: 451405379}
   - component: {fileID: 451405378}
   - component: {fileID: 451405382}
+  - component: {fileID: 451405383}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -38651,6 +38657,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &451405383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451405376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Community-ManagerTag
+  playfabItemId: Community-ManagerTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &484471511
 GameObject:
   m_ObjectHideFlags: 0
@@ -40324,61 +40354,6 @@ Transform:
   - {fileID: 97330262}
   m_Father: {fileID: 641365490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &636321518
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 636321520}
-  - component: {fileID: 636321519}
-  m_Layer: 0
-  m_Name: God Saber
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &636321519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636321518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: PhotonUnityNetworking::Photon.Pun.PhotonView
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 4
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
---- !u!4 &636321520
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636321518}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.167, y: 5.615, z: 23.574}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1468966593}
-  m_Father: {fileID: 1140791139}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &636850235
 GameObject:
   m_ObjectHideFlags: 0
@@ -40723,8 +40698,8 @@ GameObject:
   - component: {fileID: 671971387}
   - component: {fileID: 671971386}
   - component: {fileID: 671971385}
-  - component: {fileID: 671971384}
   - component: {fileID: 671971388}
+  - component: {fileID: 671971389}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -40747,21 +40722,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 484471512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &671971384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671971382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Co-CreatorTag
-  handTag: HandTag
 --- !u!65 &671971385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40861,6 +40821,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &671971389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671971382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Co-CreatorTag
+  playfabItemId: Co-CreatorTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &714099005
 GameObject:
   m_ObjectHideFlags: 0
@@ -40905,8 +40889,8 @@ GameObject:
   - component: {fileID: 715412118}
   - component: {fileID: 715412117}
   - component: {fileID: 715412116}
-  - component: {fileID: 715412114}
   - component: {fileID: 715412119}
+  - component: {fileID: 715412120}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -40929,21 +40913,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400525956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &715412114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715412112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 5
-  cosmeticName: KickHammer
-  handTag: HandTag
 --- !u!65 &715412116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41043,6 +41012,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &715412120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715412112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: KickHammer
+  playfabItemId: KickHammer
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &739225173
 GameObject:
   m_ObjectHideFlags: 0
@@ -41055,8 +41048,8 @@ GameObject:
   - component: {fileID: 739225178}
   - component: {fileID: 739225177}
   - component: {fileID: 739225176}
-  - component: {fileID: 739225179}
   - component: {fileID: 739225180}
+  - component: {fileID: 739225181}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -41157,21 +41150,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739225173}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &739225179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739225173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: DeveloperTag
-  handTag: HandTag
 --- !u!114 &739225180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41193,6 +41171,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &739225181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739225173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: DeveloperTag
+  playfabItemId: DeveloperStuff
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &754833955
 GameObject:
   m_ObjectHideFlags: 0
@@ -42022,6 +42024,167 @@ Transform:
   - {fileID: 1446963235}
   m_Father: {fileID: 641365490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &770599618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770599619}
+  - component: {fileID: 770599623}
+  - component: {fileID: 770599622}
+  - component: {fileID: 770599621}
+  - component: {fileID: 770599620}
+  m_Layer: 0
+  m_Name: D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &770599619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770599618}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.8582789, y: -0.67758954, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 774971792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &770599620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770599618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
+  cosmeticType: 0
+  cosmeticName: 
+  handTag: HandTag
+--- !u!65 &770599621
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770599618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &770599622
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770599618}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 891cb734b1022d246a31907346236591, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &770599623
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770599618}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &774971791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 774971792}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &774971792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774971791}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.65, y: 48.92, z: 0.12}
+  m_LocalScale: {x: 0.66412, y: 0.66412, z: 0.66412}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1472676815}
+  - {fileID: 770599619}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779570069
 GameObject:
   m_ObjectHideFlags: 0
@@ -42497,8 +42660,8 @@ GameObject:
   - component: {fileID: 839983971}
   - component: {fileID: 839983970}
   - component: {fileID: 839983969}
-  - component: {fileID: 839983968}
   - component: {fileID: 839983973}
+  - component: {fileID: 839983974}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -42521,19 +42684,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1691077327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &839983968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839983966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b45946087c0ce47af8a66626d05e66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeHeadCosmetic
-  Head: StaffTag
 --- !u!65 &839983969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42633,6 +42783,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &839983974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839983966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: StaffTag
+  playfabItemId: StaffStuffT1
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &840632042
 GameObject:
   m_ObjectHideFlags: 0
@@ -42826,8 +43000,8 @@ GameObject:
   - component: {fileID: 851062690}
   - component: {fileID: 851062689}
   - component: {fileID: 851062688}
-  - component: {fileID: 851062687}
   - component: {fileID: 851062692}
+  - component: {fileID: 851062693}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -42835,19 +43009,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &851062687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851062686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b45946087c0ce47af8a66626d05e66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeHeadCosmetic
-  Head: CreatorTag
 --- !u!65 &851062688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42962,6 +43123,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &851062693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851062686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: CreatorTag
+  playfabItemId: CreatorTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &861886086
 GameObject:
   m_ObjectHideFlags: 0
@@ -44134,7 +44319,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 484471512}
-  - {fileID: 1740134123}
   m_Father: {fileID: 1810503087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1002925098
@@ -45785,7 +45969,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 146149993}
-  - {fileID: 636321520}
   m_Father: {fileID: 1810503087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143117217
@@ -46099,6 +46282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1154754269}
+  - component: {fileID: 1154754270}
   m_Layer: 0
   m_Name: GameModes
   m_TagString: Untagged
@@ -46123,6 +46307,21 @@ Transform:
   - {fileID: 1184061122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154754270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154754268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
+  cosmeticType: 0
+  cosmeticName: 
+  handTag: HandTag
 --- !u!1 &1171980116
 GameObject:
   m_ObjectHideFlags: 0
@@ -46204,7 +46403,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0782a5e8bf9913b4abc8036e1ac4c3a5, type: 2}
+  - {fileID: 2100000, guid: a8754e14fb7a0c84989cb3f994b60367, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49068,8 +49267,8 @@ GameObject:
   - component: {fileID: 1328774269}
   - component: {fileID: 1328774268}
   - component: {fileID: 1328774267}
-  - component: {fileID: 1328774265}
   - component: {fileID: 1328774270}
+  - component: {fileID: 1328774271}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -49092,21 +49291,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1076866745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1328774265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328774263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 5
-  cosmeticName: BanHammer
-  handTag: HandTag
 --- !u!65 &1328774267
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49206,6 +49390,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1328774271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328774263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: BanHammer
+  playfabItemId: BanHammer
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &1335036974
 GameObject:
   m_ObjectHideFlags: 0
@@ -49871,6 +50079,7 @@ MonoBehaviour:
   - {fileID: 1068585402}
   - {fileID: 1775600601}
   - {fileID: 2010383180}
+  - {fileID: 774971791}
   disableitems:
   - {fileID: 1362324022}
   - {fileID: 1102498082}
@@ -50089,8 +50298,8 @@ GameObject:
   - component: {fileID: 1439594999}
   - component: {fileID: 1439594998}
   - component: {fileID: 1439594997}
-  - component: {fileID: 1439594996}
   - component: {fileID: 1439595000}
+  - component: {fileID: 1439595001}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -50113,21 +50322,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 272692186}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1439594996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439594994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: AdminTag
-  handTag: HandTag
 --- !u!65 &1439594997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50227,6 +50421,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1439595001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439594994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: AdminTag
+  playfabItemId: AdminTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &1446963234
 GameObject:
   m_ObjectHideFlags: 0
@@ -50664,7 +50882,7 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1 &1468966592
+--- !u!1 &1472676814
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -50672,56 +50890,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1468966593}
-  - component: {fileID: 1468966598}
-  - component: {fileID: 1468966597}
-  - component: {fileID: 1468966596}
-  - component: {fileID: 1468966595}
-  - component: {fileID: 1468966594}
-  - component: {fileID: 1468966599}
-  - component: {fileID: 1468966600}
-  m_Layer: 18
-  m_Name: DISABE$LR
+  - component: {fileID: 1472676815}
+  - component: {fileID: 1472676819}
+  - component: {fileID: 1472676818}
+  - component: {fileID: 1472676817}
+  - component: {fileID: 1472676816}
+  - component: {fileID: 1472676820}
+  m_Layer: 0
+  m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1468966593
+--- !u!4 &1472676815
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
+  m_GameObject: {fileID: 1472676814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.28823, y: 1.6918694, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.752876, y: -0.67758954, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 636321520}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1468966594
+  m_Father: {fileID: 774971792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472676816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
+  m_GameObject: {fileID: 1472676814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: GodLightsaber
---- !u!65 &1468966595
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Test
+  playfabItemId: Test
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
+--- !u!65 &1472676817
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
+  m_GameObject: {fileID: 1472676814}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -50736,13 +50963,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1468966596
+--- !u!23 &1472676818
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
+  m_GameObject: {fileID: 1472676814}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -50761,7 +50988,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6c5a0e9700f2f3c42a38bd27b949f387, type: 2}
+  - {fileID: 2100000, guid: c2d28bec36c14624e84bef0e60258a44, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50785,49 +51012,21 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1468966597
+--- !u!33 &1472676819
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
+  m_GameObject: {fileID: 1472676814}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1468966598
+--- !u!114 &1472676820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df5f17c20661d4988b220b1b969e427f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Disable
-  objectToDisable: {fileID: 1258258252}
-  HandTag: HandTag
---- !u!114 &1468966599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf6c98ecdacf14834b9519c3ffb41fae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enable
-  objectToEnable: {fileID: 0}
-  HandTag: HandTag
---- !u!114 &1468966600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
+  m_GameObject: {fileID: 1472676814}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13a961433ee45bf4f9b11b9dede25719, type: 3}
@@ -58821,6 +59020,7 @@ Transform:
   - {fileID: 839983967}
   - {fileID: 1673352315}
   - {fileID: 655289814}
+  - {fileID: 1740134123}
   m_Father: {fileID: 2010383181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1701612030
@@ -59266,7 +59466,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0782a5e8bf9913b4abc8036e1ac4c3a5, type: 2}
+  - {fileID: 2100000, guid: a8754e14fb7a0c84989cb3f994b60367, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59389,11 +59589,11 @@ Transform:
   m_GameObject: {fileID: 1740134122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.330017, y: -5.369999, z: -1.4819946}
+  m_LocalPosition: {x: -10.576904, y: -1.0031319, z: 17.220276}
   m_LocalScale: {x: 0.50503, y: 0.32984015, z: 0.50503}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1000307542}
+  m_Father: {fileID: 1691077327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1740134124
 MonoBehaviour:
@@ -59432,8 +59632,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AdvancedEnableAndDisable
   handTag: HandTag
   objectsToEnable:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1587309388}
   - {fileID: 229599544}
   - {fileID: 764694769}
@@ -62368,8 +62566,8 @@ GameObject:
   - component: {fileID: 2139308941}
   - component: {fileID: 2139308940}
   - component: {fileID: 2139308939}
-  - component: {fileID: 2139308938}
   - component: {fileID: 2139308942}
+  - component: {fileID: 2139308943}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -62392,21 +62590,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1874089216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2139308938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139308936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Senior-AdminTag
-  handTag: HandTag
 --- !u!65 &2139308939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62506,6 +62689,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &2139308943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139308936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Senior-AdminTag
+  playfabItemId: Senior-AdminTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &2139370178
 GameObject:
   m_ObjectHideFlags: 0
@@ -63059,3 +63266,5 @@ SceneRoots:
   - {fileID: 1623878914}
   - {fileID: 609606686}
   - {fileID: 1154754269}
+  - {fileID: 774971792}
+  - {fileID: 196297212}

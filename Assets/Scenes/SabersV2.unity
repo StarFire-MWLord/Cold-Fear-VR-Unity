@@ -711,8 +711,8 @@ GameObject:
   - component: {fileID: 75537860}
   - component: {fileID: 75537859}
   - component: {fileID: 75537865}
-  - component: {fileID: 75537858}
   - component: {fileID: 75537863}
+  - component: {fileID: 75537866}
   m_Layer: 18
   m_Name: DISABE$LR
   m_TagString: Untagged
@@ -735,19 +735,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 730801724}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &75537858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75537856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: UniversalLightsaber
 --- !u!65 &75537859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -875,6 +862,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &75537866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75537856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: UniversalLightsaber
+  playfabItemId: StaffStuffT1
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &83171467
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90.393}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.05, y: -0.596}
+  m_AnchoredPosition: {x: -0.05, y: -0.381}
   m_SizeDelta: {x: 30.2552, y: 4.2671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83171470
@@ -932,63 +943,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Staff-List
-
-
-    Creator
-
-    samthebee
-
-
-    Co-Creator
-
-    MW-Lord
-
-
-    Co-Owners
-
-    Abel
-    , MW-Lord
-
-
-    Developers
-
-    smeliot , MW-Lord , colt
-
-
-    Community-Managers
-
-    Traffic
-    cone man , smeliot
-
-
-    Senior-Admins
-
-    More-Soon
-
-
-    Admins
-
-    Duck
-    , pineapplevr
-
-
-    Senior-Moderators
-
-    purebloodz.
-
-
-    Moderators
-
-    Chito
-    puff edit ac , Moosees
-
-    , cardboard1man
-
-
-    Junior-Moderators
-
-    More-Soon'
+  m_text: "Staff-List\n\nCreator\nsamthebee\n\nCo-Creator\nMW-Lord\n\nCo-Owners\nMW-Lord\n\nDevelopers\nsmeliot
+    , MW-Lord \n\nCommunity-Managers\nTraffic cone man , smeliot, pineapplevr\n\nSenior-Admins\nDuck
+    ,\n\nAdmins\npurebloodz.\n\nSenior-Moderators\ncardboard1man\n\nModerators\n
+    cardboard1man ,colt\n\nJunior-Moderators\nMoosees , Chito puff edit ac"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ea0e9dc95a31c534cbfa77fbd48dec10, type: 2}
   m_sharedMaterial: {fileID: 6503820799301004658, guid: ea0e9dc95a31c534cbfa77fbd48dec10,
@@ -1187,8 +1145,8 @@ GameObject:
   - component: {fileID: 102582820}
   - component: {fileID: 102582819}
   - component: {fileID: 102582818}
-  - component: {fileID: 102582816}
   - component: {fileID: 102582821}
+  - component: {fileID: 102582822}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -1211,21 +1169,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1888294221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &102582816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102582814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 5
-  cosmeticName: FlingHammer
-  handTag: HandTag
 --- !u!65 &102582818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1325,6 +1268,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &102582822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102582814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: FlingHammer
+  playfabItemId: FlingHammer
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &106945107
 GameObject:
   m_ObjectHideFlags: 0
@@ -37078,8 +37045,8 @@ GameObject:
   - component: {fileID: 206772602}
   - component: {fileID: 206772601}
   - component: {fileID: 206772600}
-  - component: {fileID: 206772599}
   - component: {fileID: 206772603}
+  - component: {fileID: 206772604}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -37102,21 +37069,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1388517456}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &206772599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206772597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Senior-StaffTag
-  handTag: HandTag
 --- !u!65 &206772600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37216,6 +37168,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &206772604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206772597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Senior-StaffTag
+  playfabItemId: Senior-StaffTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &229599544
 GameObject:
   m_ObjectHideFlags: 0
@@ -38503,8 +38479,8 @@ GameObject:
   - component: {fileID: 284966692}
   - component: {fileID: 284966691}
   - component: {fileID: 284966690}
-  - component: {fileID: 284966689}
   - component: {fileID: 284966693}
+  - component: {fileID: 284966694}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -38527,21 +38503,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 636850236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &284966689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284966687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Co-OwnerTag
-  handTag: HandTag
 --- !u!65 &284966690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38641,6 +38602,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &284966694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284966687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Co-OwnerTag
+  playfabItemId: Co-OwnerTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &285534507
 GameObject:
   m_ObjectHideFlags: 0
@@ -41202,8 +41187,8 @@ GameObject:
   - component: {fileID: 451405381}
   - component: {fileID: 451405380}
   - component: {fileID: 451405379}
-  - component: {fileID: 451405378}
   - component: {fileID: 451405382}
+  - component: {fileID: 451405383}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -41226,21 +41211,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1082468973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &451405378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451405376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Community-ManagerTag
-  handTag: HandTag
 --- !u!65 &451405379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41340,6 +41310,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &451405383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451405376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Community-ManagerTag
+  playfabItemId: Community-ManagerTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &463388229
 GameObject:
   m_ObjectHideFlags: 0
@@ -41860,8 +41854,8 @@ GameObject:
   - component: {fileID: 499730099}
   - component: {fileID: 499730098}
   - component: {fileID: 499730103}
-  - component: {fileID: 499730097}
   - component: {fileID: 499730096}
+  - component: {fileID: 499730104}
   m_Layer: 18
   m_Name: DISABE$LR
   m_TagString: Untagged
@@ -41898,19 +41892,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enable
   objectToEnable: {fileID: 1282203773}
   HandTag: HandTag
---- !u!114 &499730097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499730094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: DemonWeapon
 --- !u!65 &499730098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42024,6 +42005,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &499730104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499730094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: DemonWeapon
+  playfabItemId: StaffStuffT2
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &511535265
 GameObject:
   m_ObjectHideFlags: 0
@@ -44849,8 +44854,8 @@ GameObject:
   - component: {fileID: 671971387}
   - component: {fileID: 671971386}
   - component: {fileID: 671971385}
-  - component: {fileID: 671971384}
   - component: {fileID: 671971388}
+  - component: {fileID: 671971389}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -44873,21 +44878,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 484471512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &671971384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671971382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Co-CreatorTag
-  handTag: HandTag
 --- !u!65 &671971385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44987,6 +44977,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &671971389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671971382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Co-CreatorTag
+  playfabItemId: Co-CreatorTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &677363326
 GameObject:
   m_ObjectHideFlags: 0
@@ -45678,8 +45692,8 @@ GameObject:
   - component: {fileID: 715412118}
   - component: {fileID: 715412117}
   - component: {fileID: 715412116}
-  - component: {fileID: 715412114}
   - component: {fileID: 715412119}
+  - component: {fileID: 715412120}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -45702,21 +45716,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400525956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &715412114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715412112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 5
-  cosmeticName: KickHammer
-  handTag: HandTag
 --- !u!65 &715412116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45816,6 +45815,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &715412120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715412112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: KickHammer
+  playfabItemId: KickHammer
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &719164028
 GameObject:
   m_ObjectHideFlags: 0
@@ -45997,6 +46020,7 @@ GameObject:
   - component: {fileID: 739225176}
   - component: {fileID: 739225179}
   - component: {fileID: 739225180}
+  - component: {fileID: 739225181}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -46133,6 +46157,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &739225181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739225173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: DeveloperTag
+  playfabItemId: DeveloperStuff
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &740316496
 GameObject:
   m_ObjectHideFlags: 0
@@ -48089,8 +48137,8 @@ GameObject:
   - component: {fileID: 839983971}
   - component: {fileID: 839983970}
   - component: {fileID: 839983969}
-  - component: {fileID: 839983968}
   - component: {fileID: 839983973}
+  - component: {fileID: 839983974}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -48113,19 +48161,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1691077327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &839983968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839983966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b45946087c0ce47af8a66626d05e66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeHeadCosmetic
-  Head: StaffTag
 --- !u!65 &839983969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48225,6 +48260,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &839983974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839983966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: StaffTag
+  playfabItemId: StaffStuffT1
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &840632042
 GameObject:
   m_ObjectHideFlags: 0
@@ -48473,8 +48532,8 @@ GameObject:
   - component: {fileID: 851062690}
   - component: {fileID: 851062689}
   - component: {fileID: 851062688}
-  - component: {fileID: 851062687}
   - component: {fileID: 851062692}
+  - component: {fileID: 851062693}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -48482,19 +48541,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &851062687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851062686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b45946087c0ce47af8a66626d05e66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeHeadCosmetic
-  Head: CreatorTag
 --- !u!65 &851062688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48609,6 +48655,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &851062693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851062686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: CreatorTag
+  playfabItemId: CreatorTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &857598444
 GameObject:
   m_ObjectHideFlags: 0
@@ -49436,8 +49506,8 @@ GameObject:
   - component: {fileID: 949955319}
   - component: {fileID: 949955318}
   - component: {fileID: 949955324}
-  - component: {fileID: 949955317}
   - component: {fileID: 949955322}
+  - component: {fileID: 949955325}
   m_Layer: 18
   m_Name: DISABE$LR
   m_TagString: Untagged
@@ -49460,19 +49530,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2094067184}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &949955317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949955315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: FalseAngelLightSaber
 --- !u!65 &949955318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49600,6 +49657,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &949955325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949955315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: FalseAngelLightSaber
+  playfabItemId: StaffStuffT1
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &954726911
 GameObject:
   m_ObjectHideFlags: 0
@@ -54123,13 +54204,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1259302120}
-  - component: {fileID: 1259302121}
   - component: {fileID: 1259302125}
   - component: {fileID: 1259302124}
   - component: {fileID: 1259302123}
   - component: {fileID: 1259302122}
   - component: {fileID: 1259302128}
   - component: {fileID: 1259302126}
+  - component: {fileID: 1259302129}
   m_Layer: 18
   m_Name: DISABE$LR
   m_TagString: Untagged
@@ -54152,19 +54233,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 850279510}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1259302121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259302119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: ReversalRedLightsaber
 --- !u!65 &1259302122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54292,6 +54360,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1259302129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259302119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: ReversalRedLightsaber
+  playfabItemId: StaffStuffT2
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &1268568512
 GameObject:
   m_ObjectHideFlags: 0
@@ -57308,8 +57400,8 @@ GameObject:
   - component: {fileID: 1328774269}
   - component: {fileID: 1328774268}
   - component: {fileID: 1328774267}
-  - component: {fileID: 1328774265}
   - component: {fileID: 1328774270}
+  - component: {fileID: 1328774271}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -57332,21 +57424,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1076866745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1328774265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328774263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 5
-  cosmeticName: BanHammer
-  handTag: HandTag
 --- !u!65 &1328774267
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57446,6 +57523,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1328774271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328774263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: BanHammer
+  playfabItemId: BanHammer
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &1334658121
 GameObject:
   m_ObjectHideFlags: 0
@@ -57461,8 +57562,8 @@ GameObject:
   - component: {fileID: 1334658125}
   - component: {fileID: 1334658124}
   - component: {fileID: 1334658131}
-  - component: {fileID: 1334658123}
   - component: {fileID: 1334658129}
+  - component: {fileID: 1334658132}
   m_Layer: 18
   m_Name: DISABE$LR
   m_TagString: Untagged
@@ -57485,19 +57586,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 689157705}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1334658123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334658121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: MaximumBlueLightsaber
 --- !u!65 &1334658124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57639,6 +57727,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1334658132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334658121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: MaximumBlueLightsaber
+  playfabItemId: StaffStuffT2
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &1335036974
 GameObject:
   m_ObjectHideFlags: 0
@@ -60019,8 +60131,8 @@ GameObject:
   - component: {fileID: 1439594999}
   - component: {fileID: 1439594998}
   - component: {fileID: 1439594997}
-  - component: {fileID: 1439594996}
   - component: {fileID: 1439595000}
+  - component: {fileID: 1439595001}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -60043,21 +60155,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 272692186}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1439594996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439594994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: AdminTag
-  handTag: HandTag
 --- !u!65 &1439594997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60157,6 +60254,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1439595001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439594994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: AdminTag
+  playfabItemId: AdminTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &1441641083
 GameObject:
   m_ObjectHideFlags: 0
@@ -60875,9 +60996,9 @@ GameObject:
   - component: {fileID: 1468966597}
   - component: {fileID: 1468966596}
   - component: {fileID: 1468966595}
-  - component: {fileID: 1468966594}
   - component: {fileID: 1468966599}
   - component: {fileID: 1468966600}
+  - component: {fileID: 1468966601}
   m_Layer: 18
   m_Name: DISABE$LR
   m_TagString: Untagged
@@ -60900,19 +61021,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 636321520}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1468966594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468966592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: GodLightsaber
 --- !u!65 &1468966595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61040,6 +61148,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1468966601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468966592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: GodLightsaber
+  playfabItemId: CreatorTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &1476798190
 GameObject:
   m_ObjectHideFlags: 0
@@ -78163,8 +78295,8 @@ GameObject:
   - component: {fileID: 1824058927}
   - component: {fileID: 1824058926}
   - component: {fileID: 1824058932}
-  - component: {fileID: 1824058925}
   - component: {fileID: 1824058930}
+  - component: {fileID: 1824058933}
   m_Layer: 18
   m_Name: DISABE$LR
   m_TagString: Untagged
@@ -78187,19 +78319,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 696917214}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1824058925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824058923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: UnknownLightsaber
 --- !u!65 &1824058926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78327,6 +78446,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1824058933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824058923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: UnknownLightsaber
+  playfabItemId: StaffStuffT1
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &1838485895
 GameObject:
   m_ObjectHideFlags: 0
@@ -79527,9 +79670,9 @@ GameObject:
   - component: {fileID: 1942085371}
   - component: {fileID: 1942085370}
   - component: {fileID: 1942085377}
-  - component: {fileID: 1942085369}
-  - component: {fileID: 1942085374}
   - component: {fileID: 1942085375}
+  - component: {fileID: 1942085379}
+  - component: {fileID: 1942085378}
   m_Layer: 18
   m_Name: DISABE$LR
   m_TagString: Untagged
@@ -79552,19 +79695,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1845872325}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1942085369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942085367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edea7afe0ed0fa349a9a0fb5da00da2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRightCosmetic
-  Right: HollowPurpleLightsaber
 --- !u!65 &1942085370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79657,19 +79787,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Disable
   objectToDisable: {fileID: 1258258252}
   HandTag: HandTag
---- !u!114 &1942085374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942085367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb614221cd1f3cc40810df6a99c494fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeBodyCosmetic
-  Body: AuraHollow
 --- !u!114 &1942085375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79705,6 +79822,54 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &1942085378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942085367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 5
+  cosmeticName: HollowPurpleLightsaber
+  playfabItemId: StaffStuffT2
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
+--- !u!114 &1942085379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942085367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 2
+  cosmeticName: AuraHollow
+  playfabItemId: StaffStuffT2
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!43 &1959178495
 Mesh:
   m_ObjectHideFlags: 0
@@ -82743,8 +82908,8 @@ GameObject:
   - component: {fileID: 2139308941}
   - component: {fileID: 2139308940}
   - component: {fileID: 2139308939}
-  - component: {fileID: 2139308938}
   - component: {fileID: 2139308942}
+  - component: {fileID: 2139308943}
   m_Layer: 0
   m_Name: Enable
   m_TagString: Untagged
@@ -82767,21 +82932,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1874089216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2139308938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139308936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7aadb624270a64da9f7a18545d6833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CosmeticHandler
-  cosmeticType: 0
-  cosmeticName: Senior-AdminTag
-  handTag: HandTag
 --- !u!65 &2139308939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82881,6 +83031,30 @@ MonoBehaviour:
     m_Bits: 65536
   collisionVelocityThreshold: 0.1
   vibrationCooldown: 0.2
+--- !u!114 &2139308943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139308936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ddaf91046a7e78488717b95ed56fc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StarFiresModCosmeticHandler
+  cosmeticType: 0
+  cosmeticName: Senior-AdminTag
+  playfabItemId: Senior-AdminTag
+  catalogName: Items
+  triggerTags:
+  - HandTag
+  sendToDiscordWebhook: 1
+  discordWebhookURL: https://discord.com/api/webhooks/1490033371341127701/lF2oPMuzZAcYvS7bwakSpeyvSGqPwaBYCDofUaEwFrthcFgqXEPELZD4EmEW4rBVtevn
+  customDiscordMessage: '@everyone A dumb ass hacker has tried to enable a moderator
+    cosmetic and got kicked from the game and play fab ID logged so they can get
+    banned'
+  quitIfNotOwned: 1
 --- !u!1 &2139370178
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SabersV2.unity
     guid: d03d5f54a8f725149aca3f4f33b89f7d
+  - enabled: 1
+    path: Assets/Scenes/LaserMazeV1.unity
+    guid: 35069cf00a7af014688bb314deacdbc9
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 63f762831ac3c4ff39e7998eb51cc1da,
       type: 2}

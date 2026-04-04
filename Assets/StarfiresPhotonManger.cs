@@ -180,7 +180,7 @@ public class StarfiresPhotonManger : MonoBehaviourPunCallbacks
         return 0;
     }
 
-#if UNITY_EDITOR
+    #if UNITY_EDITOR
     [CustomEditor(typeof(StarfiresPhotonManger))]
     public class StarfiresPhotonMangerEditor : Editor
     {
